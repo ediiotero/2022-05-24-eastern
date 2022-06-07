@@ -1,6 +1,6 @@
 # 2022-05-24-eastern
 
-- Clone the repo using git clone https://github.com/ediiotero/2022-03-24-fesd-pacific.git
+- Clone the repo using git clone https://github.com/ediiotero/2022-05-24-eastern
 
 - Use git branch to see all branches ( if you have already cloned the repo use git fetch to get an updated list of branched and try git branch again).
 
