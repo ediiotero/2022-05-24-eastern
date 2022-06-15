@@ -2,14 +2,20 @@
 // and store the response in an array and console.log or alert
 //  the answers when the loop is done
 
-const questions = [
-    "What is your name?", 
-    "What is your favorite color?", 
-    "What city are you in?"
-];
+// const questions = [
+//     "What is your name?", 
+//     "What is your favorite color?", 
+//     "What city are you in?"
+// ];
 
-const answers = [];
+// const answers = [];
 
+// for (let i = 0; i < questions.length; i++) {
+//     const promptAnswer = prompt(questions[i]);
+//     answers.push(promptAnswer)
+// };
+
+// alert(answers);
 
 // =====================
 
@@ -18,6 +24,20 @@ const answers = [];
 // Return the first number in the array
 
 const num = [2,5,9,10,23];
+
+function getNum(numAry) {
+    const noOdd = numAry.filter(function(number){
+        return number % 2 === 0
+    });
+
+    const multiNum = noOdd.map(function(number){
+        return number * 3;
+    });
+
+    return multiNum[0];
+};
+
+console.log(getNum(num));
 
 
 // ===================
@@ -30,6 +50,18 @@ const num = [2,5,9,10,23];
 // To convert C to F: Divide by 5, then multiply by 9, then add 32
 // To convert F to C: Deduct 32, then multiply by 5, then divide by 9
 
+function celsiusToFahrenheit(celsius) {
+    var celsiusInF = (celsius*9)/5 + 32;
+    console.log(celsius + ' C is ' + celsiusInF + ' F');
+}
+  
+function fahrenheitToCelsius(fahrenheit) {
+    var fahrenheitInC = ((fahrenheit - 32)*5)/9;
+    console.log(fahrenheit + ' F is ' + fahrenheitInC + ' C');
+}
+
+console.log(celsiusToFahrenheit(5))
+console.log(fahrenheitToCelsius(80))
 
 //   ========================
 
@@ -37,7 +69,18 @@ const num = [2,5,9,10,23];
 
 var words = ["cat", "pizza", "javascript"]
 
+function getLongestWord(wordsAry) {
+    var longestWord = '';
+    wordsAry.forEach(function(word){
+        if(longestWord.length < word.length){
+            longestWord = word;
+        };
+    });
 
+    return longestWord;
+};
+
+console.log(getLongestWord(words));
 // =============================
 
 // Write a function that will take a word and/or sentence and remove all of the vowels
