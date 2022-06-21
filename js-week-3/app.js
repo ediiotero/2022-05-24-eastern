@@ -88,3 +88,15 @@ console.log(getLongestWord(words));
 // ex: 'The Batman' should return 'thbtmn'
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split
+
+var test = function(word) {
+    var vowels = ['a', 'e', 'i', 'o', 'u'];
+    var wordAry = word.toLowerCase().split('').filter(function(letter) {
+      return letter !== " "
+    });
+    var noVowels = wordAry.filter(letter => !vowels.includes(letter))
+   
+    return noVowels.join('');
+  };
+  
+  console.log(test('The Batman'));
