@@ -20,7 +20,7 @@ function myDisplayer(some) {
 }
   
 let myPromise = new Promise(function(myResolve, myReject) {
-let x = 1;
+let x = 0;
 
 // The producing code (this may take some time)
 
@@ -32,19 +32,19 @@ if (x === 0) {
 }
 });
 
-myPromise.then(
-function(value) {myDisplayer(value);},
-function(error) {myDisplayer(error);}
-);
+// myPromise.then(
+// function(value) {myDisplayer(value);},
+// function(error) {myDisplayer(error);}
+// );
 
 
 let nextPromise = new Promise(function(myResolve, myReject) {
     setTimeout(function() { myResolve("I love JavaScript !!"); }, 3000);
   });
   
-  nextPromise.then(function(value) {
-    console.log(value)
-  });
+//   nextPromise.then(function(value) {
+//     console.log(value)
+//   });
 
 // ========================
 

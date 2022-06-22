@@ -2,7 +2,23 @@
 // You must check that the users inputs is a number if it isn't alter the user 
 // and prompt the user again
 
+// const getNumbers = () => {
+//     let currentNumber = 0;
 
+//     for (let i = 0; i < 3; i++) {
+//         let question = parseInt(prompt("Pick a number"));
+
+//         while(isNaN(question)){
+//             question = parseInt(prompt("Pick a number"));
+//         }
+        
+//         currentNumber = currentNumber + question;
+//     }
+
+//     return currentNumber * 3;
+// }
+
+// console.log(getNumbers())
 
 
 
@@ -15,10 +31,20 @@
 // and combine the element in the array with the word given in the prompt and alert the answer
 //*** Bonus: accomplish the same result without the finishSentence function and use an array method
 
+const list = ["My name is ", "I live in ", "My favorite food is "];
 
+const combine = (sentence, word) => {
+    return `${sentence} ${word}`
+}
 
+const finishSentence = (array, callback) => {
+    for (let i = 0; i < array.length; i++) {
+        const word = prompt(array[i])
+        alert(callback(array[i], word))
+    }
+}
 
-
+finishSentence(list, combine);
 
 
 // ============================================

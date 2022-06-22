@@ -27,9 +27,9 @@ function testScopeGlobal() {
 
 function testScopeLet() {
     if(true){
-        let test = 'Hello'
+        let test3 = 'Hello'
     }
-    console.log(`let: `, test)
+    console.log(`let: `, test3)
 }
 
 // testScopeLet()
@@ -64,6 +64,11 @@ function myFunction() {
     console.log(carName)
     // code here CAN use carName
 };
+
+// console.log(carName)
+console.log(varName)
+let varNa
+
   
   // code here can NOT use carName
 
