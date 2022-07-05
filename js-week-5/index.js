@@ -70,7 +70,7 @@ console.log(villain1)
 console.log(villain1.attack())
 console.log(villain1.magic())
 
-while(hero1.health >= 0 && villain1.health >=0) {
+while(hero1.health > 0 && villain1.health > 0) {
     const villainAttack = villain1.magic();
     const heroAttack = hero1.attack();
 
