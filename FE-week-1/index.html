@@ -51,7 +51,35 @@
         <hr>
 
         <form>
-            Enter name: <input type="text">
+            <div>
+                <label>Name</label>
+                <input type="text" name="name">
+            </div>
+            <br>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email">
+            </div>
+            <br>
+            <div>
+                <label>Password</label>
+                <input type="password" name="password">
+            </div>
+            <br>
+            <div>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>Color</label>
+                <select name="color">
+                    <option value="black">Black</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                </select>
+            </div>
+            <br>
             <input type="submit" onclick="onSubmit()">
         </form>
 
